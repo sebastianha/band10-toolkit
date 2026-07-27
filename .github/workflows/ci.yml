@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      - run: npm install --no-audit --no-fund
       - run: npm run generate:assets
       - run: npm run generate:flux
       - run: npm run build
