@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run generate:assets
+      - run: npm run generate:flux
+      - run: npm run build
+      - run: npm run package
+      - run: npm run package:flux
+      - uses: actions/upload-artifact@v4
+        with:
+          name: carbon-signal-unverified-native
+          path: |
+            examples/minimal-amoled/build/preview.png
+            examples/minimal-amoled/build/fprj/
+            examples/minimal-amoled/build/gmf/
+            examples/minimal-amoled/dist/
+            examples/flux-core/build/preview.png
+            examples/flux-core/build/fprj/
+            examples/flux-core/build/gmf/
+            examples/flux-core/dist/
+          if-no-files-found: error

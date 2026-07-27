@@ -1,0 +1,15 @@
+node_modules/
+preview/dist/
+preview/public/project/
+examples/*/build/
+examples/*/dist/
+*.log
+.DS_Store
+.env
+
+# Generated video frames — large, and derived from personal/third-party video.
+# The Odyssey trailer frames are Universal Pictures' copyright; do not publish.
+examples/odyssey/assets/
+examples/odyssey/screenshots/
+examples/video-portrait/assets/
+examples/video-portrait/screenshots/
