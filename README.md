@@ -12,6 +12,59 @@ Design assets, describe widgets in JSON, validate, live-preview in React/SVG, ge
 |---|---|
 | ![Carbon Signal active](docs/screenshots/active-watchface.png) | ![Carbon Signal AOD](docs/screenshots/aod-watchface.png) |
 
+## Getting started (build & open the simulator)
+
+Everything runs locally. You only need **Node.js 22+** and **git**.
+
+**1. Clone the repo and install dependencies**
+
+```sh
+git clone https://github.com/utsabfdahal/band10-toolkit.git
+cd band10-toolkit
+npm install
+```
+
+**2. Generate the source artwork for the example face**
+
+```sh
+npm run generate:assets
+```
+
+**3. Open the live simulator (the React/SVG watch studio)**
+
+```sh
+npm run preview
+```
+
+This starts the studio's dev server. Open the URL it prints — by default
+**http://localhost:5173** — in your browser to see the watch face rendered at
+the real 212×520 Band 10 resolution, with drag/drop, a layer inspector, live
+JSON editing, and a data simulator. Press `Ctrl+C` in the terminal to stop it.
+
+**4. Build, validate, and package a `.face` (optional)**
+
+```sh
+npm run validate        # schema, coordinates, storage, capability checks
+npm run build:example   # render preview + FPRJ/GMF intermediates
+npm run package         # write the .face / .bin package
+npm run inspect         # print headers, resources, and bindings
+```
+
+The packaged files land in `examples/minimal-amoled/dist/`.
+
+### Preview any of the other faces
+
+Each design has its own `preview` script that generates its assets and opens
+the same simulator:
+
+```sh
+npm run preview:flux       # Flux Core electronics face
+npm run preview:backend    # utsab.json developer face
+npm run preview:rlc        # RLC Singularity animated circuit
+npm run preview:circuit    # Circuit Link reactor
+npm run preview:odyssey    # Odyssey landscape video loop
+```
+
 ## Flux Core electronics design
 
 The [`examples/flux-core`](examples/flux-core) face is a clean electronics-themed design with copper/cyan PCB digits, an `L1 / 47uH` inductor module, magnetic-field traces, oscilloscope telemetry, and a restrained AOD. Collision-aware validation reports no clipping or overlaps, and the layout uses no `allowOverlap` exceptions.
