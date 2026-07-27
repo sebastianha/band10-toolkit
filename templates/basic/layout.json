@@ -1,0 +1,25 @@
+{
+  "$schema": "../../schemas/layout.schema.json",
+  "formatVersion": 1,
+  "canvas": {
+    "width": 212,
+    "height": 520,
+    "clip": "pill"
+  },
+  "assets": {
+    "digitSets": {}
+  },
+  "normal": {
+    "background": "#000000",
+    "widgets": [
+      {
+        "id": "starter-mark",
+        "type": "image",
+        "asset": "assets/starter.svg",
+        "x": 74,
+        "y": 228,
+        "z": 1
+      }
+    ]
+  }
+}

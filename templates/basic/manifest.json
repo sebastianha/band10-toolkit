@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/manifest.schema.json",
+  "formatVersion": 1,
+  "id": "000000001",
+  "name": "Starter Face",
+  "author": "Your Name",
+  "version": "0.1.0",
+  "description": "Buildable Band 10 starter project.",
+  "license": "MIT",
+  "device": "xiaomi-smart-band-10",
+  "preview": "generated",
+  "output": "starter-face",
+  "compiler": {
+    "target": "native",
+    "imageCompression": true
+  }
+}
