@@ -1,0 +1,654 @@
+{
+  "$schema": "../../schemas/layout.schema.json",
+  "formatVersion": 1,
+  "canvas": {
+    "width": 212,
+    "height": 520,
+    "clip": "pill"
+  },
+  "assets": {
+    "digitSets": {
+      "clock": {
+        "digits": [
+          "assets/digits-clock/0.svg",
+          "assets/digits-clock/1.svg",
+          "assets/digits-clock/2.svg",
+          "assets/digits-clock/3.svg",
+          "assets/digits-clock/4.svg",
+          "assets/digits-clock/5.svg",
+          "assets/digits-clock/6.svg",
+          "assets/digits-clock/7.svg",
+          "assets/digits-clock/8.svg",
+          "assets/digits-clock/9.svg"
+        ],
+        "minus": "assets/digits-clock/minus.svg"
+      },
+      "num": {
+        "digits": [
+          "assets/digits-num/0.svg",
+          "assets/digits-num/1.svg",
+          "assets/digits-num/2.svg",
+          "assets/digits-num/3.svg",
+          "assets/digits-num/4.svg",
+          "assets/digits-num/5.svg",
+          "assets/digits-num/6.svg",
+          "assets/digits-num/7.svg",
+          "assets/digits-num/8.svg",
+          "assets/digits-num/9.svg"
+        ],
+        "minus": "assets/digits-num/minus.svg"
+      },
+      "str": {
+        "digits": [
+          "assets/digits-str/0.svg",
+          "assets/digits-str/1.svg",
+          "assets/digits-str/2.svg",
+          "assets/digits-str/3.svg",
+          "assets/digits-str/4.svg",
+          "assets/digits-str/5.svg",
+          "assets/digits-str/6.svg",
+          "assets/digits-str/7.svg",
+          "assets/digits-str/8.svg",
+          "assets/digits-str/9.svg"
+        ],
+        "minus": "assets/digits-str/minus.svg"
+      },
+      "clock-aod": {
+        "digits": [
+          "assets/digits-clock-aod/0.svg",
+          "assets/digits-clock-aod/1.svg",
+          "assets/digits-clock-aod/2.svg",
+          "assets/digits-clock-aod/3.svg",
+          "assets/digits-clock-aod/4.svg",
+          "assets/digits-clock-aod/5.svg",
+          "assets/digits-clock-aod/6.svg",
+          "assets/digits-clock-aod/7.svg",
+          "assets/digits-clock-aod/8.svg",
+          "assets/digits-clock-aod/9.svg"
+        ],
+        "minus": "assets/digits-clock-aod/minus.svg"
+      },
+      "aod": {
+        "digits": [
+          "assets/digits-aod/0.svg",
+          "assets/digits-aod/1.svg",
+          "assets/digits-aod/2.svg",
+          "assets/digits-aod/3.svg",
+          "assets/digits-aod/4.svg",
+          "assets/digits-aod/5.svg",
+          "assets/digits-aod/6.svg",
+          "assets/digits-aod/7.svg",
+          "assets/digits-aod/8.svg",
+          "assets/digits-aod/9.svg"
+        ],
+        "minus": "assets/digits-aod/minus.svg"
+      }
+    }
+  },
+  "normal": {
+    "background": "#000000",
+    "widgets": [
+      {
+        "id": "hours",
+        "label": "Hours",
+        "type": "number",
+        "source": "hour",
+        "digitSet": "clock",
+        "digits": 2,
+        "align": "left",
+        "spacing": 0,
+        "leadingZero": true,
+        "x": 34,
+        "y": 44,
+        "z": 4,
+        "allowOverlap": true
+      },
+      {
+        "id": "clock-colon",
+        "label": "Clock colon",
+        "type": "image",
+        "asset": "assets/tok/clock-colon.svg",
+        "x": 98,
+        "y": 44,
+        "z": 4,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "minutes",
+        "label": "Minutes",
+        "type": "number",
+        "source": "minute",
+        "digitSet": "clock",
+        "digits": 2,
+        "align": "left",
+        "spacing": 0,
+        "leadingZero": true,
+        "x": 114,
+        "y": 44,
+        "z": 4,
+        "allowOverlap": true
+      },
+      {
+        "id": "filename",
+        "label": "Filename",
+        "type": "image",
+        "asset": "assets/tok/filename.svg",
+        "x": 61,
+        "y": 118,
+        "z": 4,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "brace-open",
+        "label": "Open brace",
+        "type": "image",
+        "asset": "assets/tok/brace-open.svg",
+        "x": 24,
+        "y": 148,
+        "z": 3,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "p-date-key",
+        "label": "p-date key",
+        "type": "image",
+        "asset": "assets/tok/p-date.svg",
+        "x": 24,
+        "y": 176,
+        "z": 3,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "date-month",
+        "label": "Month",
+        "type": "image-list",
+        "source": "month",
+        "fallback": "exact",
+        "items": [
+          {
+            "value": 1,
+            "asset": "assets/month/1.svg"
+          },
+          {
+            "value": 2,
+            "asset": "assets/month/2.svg"
+          },
+          {
+            "value": 3,
+            "asset": "assets/month/3.svg"
+          },
+          {
+            "value": 4,
+            "asset": "assets/month/4.svg"
+          },
+          {
+            "value": 5,
+            "asset": "assets/month/5.svg"
+          },
+          {
+            "value": 6,
+            "asset": "assets/month/6.svg"
+          },
+          {
+            "value": 7,
+            "asset": "assets/month/7.svg"
+          },
+          {
+            "value": 8,
+            "asset": "assets/month/8.svg"
+          },
+          {
+            "value": 9,
+            "asset": "assets/month/9.svg"
+          },
+          {
+            "value": 10,
+            "asset": "assets/month/10.svg"
+          },
+          {
+            "value": 11,
+            "asset": "assets/month/11.svg"
+          },
+          {
+            "value": 12,
+            "asset": "assets/month/12.svg"
+          }
+        ],
+        "x": 114,
+        "y": 176,
+        "z": 3,
+        "allowOverlap": true
+      },
+      {
+        "id": "date-day",
+        "label": "Day",
+        "type": "number",
+        "source": "day",
+        "digitSet": "str",
+        "digits": 2,
+        "align": "left",
+        "spacing": 0,
+        "leadingZero": true,
+        "unitAsset": "assets/tok/close-str.svg",
+        "x": 150,
+        "y": 176,
+        "z": 3,
+        "allowOverlap": true
+      },
+      {
+        "id": "p-day-key",
+        "label": "p-day key",
+        "type": "image",
+        "asset": "assets/tok/p-day.svg",
+        "x": 24,
+        "y": 204,
+        "z": 3,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "weekday",
+        "label": "Weekday",
+        "type": "image-list",
+        "source": "weekday",
+        "fallback": "exact",
+        "items": [
+          {
+            "value": 0,
+            "asset": "assets/weekday/0.svg"
+          },
+          {
+            "value": 1,
+            "asset": "assets/weekday/1.svg"
+          },
+          {
+            "value": 2,
+            "asset": "assets/weekday/2.svg"
+          },
+          {
+            "value": 3,
+            "asset": "assets/weekday/3.svg"
+          },
+          {
+            "value": 4,
+            "asset": "assets/weekday/4.svg"
+          },
+          {
+            "value": 5,
+            "asset": "assets/weekday/5.svg"
+          },
+          {
+            "value": 6,
+            "asset": "assets/weekday/6.svg"
+          }
+        ],
+        "x": 105,
+        "y": 204,
+        "z": 3,
+        "allowOverlap": true
+      },
+      {
+        "id": "p-nepali-key",
+        "label": "Nepali date key",
+        "type": "image",
+        "asset": "assets/tok/p-nepali.svg",
+        "x": 24,
+        "y": 232,
+        "z": 3,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "nepali-date",
+        "label": "Nepali date",
+        "type": "image-list",
+        "source": "day",
+        "fallback": "exact",
+        "items": [
+          {
+            "value": 1,
+            "asset": "assets/nepali/day-01.svg"
+          },
+          {
+            "value": 2,
+            "asset": "assets/nepali/day-02.svg"
+          },
+          {
+            "value": 3,
+            "asset": "assets/nepali/day-03.svg"
+          },
+          {
+            "value": 4,
+            "asset": "assets/nepali/day-04.svg"
+          },
+          {
+            "value": 5,
+            "asset": "assets/nepali/day-05.svg"
+          },
+          {
+            "value": 6,
+            "asset": "assets/nepali/day-06.svg"
+          },
+          {
+            "value": 7,
+            "asset": "assets/nepali/day-07.svg"
+          },
+          {
+            "value": 8,
+            "asset": "assets/nepali/day-08.svg"
+          },
+          {
+            "value": 9,
+            "asset": "assets/nepali/day-09.svg"
+          },
+          {
+            "value": 10,
+            "asset": "assets/nepali/day-10.svg"
+          },
+          {
+            "value": 11,
+            "asset": "assets/nepali/day-11.svg"
+          },
+          {
+            "value": 12,
+            "asset": "assets/nepali/day-12.svg"
+          },
+          {
+            "value": 13,
+            "asset": "assets/nepali/day-13.svg"
+          },
+          {
+            "value": 14,
+            "asset": "assets/nepali/day-14.svg"
+          },
+          {
+            "value": 15,
+            "asset": "assets/nepali/day-15.svg"
+          },
+          {
+            "value": 16,
+            "asset": "assets/nepali/day-16.svg"
+          },
+          {
+            "value": 17,
+            "asset": "assets/nepali/day-17.svg"
+          },
+          {
+            "value": 18,
+            "asset": "assets/nepali/day-18.svg"
+          },
+          {
+            "value": 19,
+            "asset": "assets/nepali/day-19.svg"
+          },
+          {
+            "value": 20,
+            "asset": "assets/nepali/day-20.svg"
+          },
+          {
+            "value": 21,
+            "asset": "assets/nepali/day-21.svg"
+          },
+          {
+            "value": 22,
+            "asset": "assets/nepali/day-22.svg"
+          },
+          {
+            "value": 23,
+            "asset": "assets/nepali/day-23.svg"
+          },
+          {
+            "value": 24,
+            "asset": "assets/nepali/day-24.svg"
+          },
+          {
+            "value": 25,
+            "asset": "assets/nepali/day-25.svg"
+          },
+          {
+            "value": 26,
+            "asset": "assets/nepali/day-26.svg"
+          },
+          {
+            "value": 27,
+            "asset": "assets/nepali/day-27.svg"
+          },
+          {
+            "value": 28,
+            "asset": "assets/nepali/day-28.svg"
+          },
+          {
+            "value": 29,
+            "asset": "assets/nepali/day-29.svg"
+          },
+          {
+            "value": 30,
+            "asset": "assets/nepali/day-30.svg"
+          },
+          {
+            "value": 31,
+            "asset": "assets/nepali/day-31.svg"
+          }
+        ],
+        "x": 88,
+        "y": 232,
+        "z": 3,
+        "allowOverlap": true
+      },
+      {
+        "id": "p-steps-key",
+        "label": "p-steps key",
+        "type": "image",
+        "asset": "assets/tok/p-steps.svg",
+        "x": 24,
+        "y": 260,
+        "z": 3,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "steps",
+        "label": "Steps",
+        "type": "number",
+        "source": "steps",
+        "digitSet": "num",
+        "digits": 5,
+        "align": "left",
+        "spacing": 0,
+        "leadingZero": false,
+        "unitAsset": "assets/tok/comma.svg",
+        "x": 114,
+        "y": 260,
+        "z": 3,
+        "allowOverlap": true
+      },
+      {
+        "id": "p-battery-key",
+        "label": "p-battery key",
+        "type": "image",
+        "asset": "assets/tok/p-battery.svg",
+        "x": 24,
+        "y": 288,
+        "z": 3,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "battery",
+        "label": "Battery",
+        "type": "number",
+        "source": "battery",
+        "digitSet": "str",
+        "digits": 3,
+        "align": "left",
+        "spacing": 0,
+        "leadingZero": false,
+        "unitAsset": "assets/tok/pct-close.svg",
+        "x": 141,
+        "y": 288,
+        "z": 3,
+        "allowOverlap": true
+      },
+      {
+        "id": "brace-close",
+        "label": "Close brace",
+        "type": "image",
+        "asset": "assets/tok/brace-close.svg",
+        "x": 24,
+        "y": 316,
+        "z": 3,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "meta-status",
+        "label": "Status metadata",
+        "type": "image",
+        "asset": "assets/tok/meta-status.svg",
+        "x": 24,
+        "y": 350,
+        "z": 3,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "meta-env",
+        "label": "Env metadata",
+        "type": "image",
+        "asset": "assets/tok/meta-env.svg",
+        "x": 24,
+        "y": 374,
+        "z": 3,
+        "allowOverlap": true,
+        "locked": true
+      }
+    ]
+  },
+  "aod": {
+    "enabled": true,
+    "background": "#000000",
+    "widgets": [
+      {
+        "id": "aod-hours",
+        "label": "AOD hours",
+        "type": "number",
+        "source": "hour",
+        "digitSet": "clock-aod",
+        "digits": 2,
+        "align": "left",
+        "spacing": 0,
+        "leadingZero": true,
+        "x": 34,
+        "y": 96,
+        "z": 1,
+        "allowOverlap": true
+      },
+      {
+        "id": "aod-colon",
+        "label": "AOD colon",
+        "type": "image",
+        "asset": "assets/tok/clock-colon-aod.svg",
+        "x": 98,
+        "y": 96,
+        "z": 1,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "aod-minutes",
+        "label": "AOD minutes",
+        "type": "number",
+        "source": "minute",
+        "digitSet": "clock-aod",
+        "digits": 2,
+        "align": "left",
+        "spacing": 0,
+        "leadingZero": true,
+        "x": 114,
+        "y": 96,
+        "z": 1,
+        "allowOverlap": true
+      },
+      {
+        "id": "aod-brace-open",
+        "label": "AOD open brace",
+        "type": "image",
+        "asset": "assets/tok/aod-brace-open.svg",
+        "x": 24,
+        "y": 194,
+        "z": 1,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "aod-steps-key",
+        "label": "AOD steps key",
+        "type": "image",
+        "asset": "assets/tok/aod-steps.svg",
+        "x": 24,
+        "y": 224,
+        "z": 1,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "aod-steps",
+        "label": "AOD steps",
+        "type": "number",
+        "source": "steps",
+        "digitSet": "aod",
+        "digits": 5,
+        "align": "left",
+        "spacing": 0,
+        "leadingZero": false,
+        "unitAsset": "assets/tok/aod-comma.svg",
+        "x": 105,
+        "y": 224,
+        "z": 1,
+        "allowOverlap": true
+      },
+      {
+        "id": "aod-battery-key",
+        "label": "AOD battery key",
+        "type": "image",
+        "asset": "assets/tok/aod-battery.svg",
+        "x": 24,
+        "y": 254,
+        "z": 1,
+        "allowOverlap": true,
+        "locked": true
+      },
+      {
+        "id": "aod-battery",
+        "label": "AOD battery",
+        "type": "number",
+        "source": "battery",
+        "digitSet": "aod",
+        "digits": 3,
+        "align": "left",
+        "spacing": 0,
+        "leadingZero": false,
+        "unitAsset": "assets/tok/aod-pct-close.svg",
+        "x": 132,
+        "y": 254,
+        "z": 1,
+        "allowOverlap": true
+      },
+      {
+        "id": "aod-brace-close",
+        "label": "AOD close brace",
+        "type": "image",
+        "asset": "assets/tok/aod-brace-close.svg",
+        "x": 24,
+        "y": 284,
+        "z": 1,
+        "allowOverlap": true,
+        "locked": true
+      }
+    ]
+  }
+}

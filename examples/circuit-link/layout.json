@@ -1,0 +1,289 @@
+{
+  "$schema": "../../schemas/layout.schema.json",
+  "formatVersion": 1,
+  "canvas": {
+    "width": 212,
+    "height": 520,
+    "clip": "pill"
+  },
+  "assets": {
+    "digitSets": {
+      "hour-copper": {
+        "digits": [
+          "assets/digits-hour/0.svg",
+          "assets/digits-hour/1.svg",
+          "assets/digits-hour/2.svg",
+          "assets/digits-hour/3.svg",
+          "assets/digits-hour/4.svg",
+          "assets/digits-hour/5.svg",
+          "assets/digits-hour/6.svg",
+          "assets/digits-hour/7.svg",
+          "assets/digits-hour/8.svg",
+          "assets/digits-hour/9.svg"
+        ],
+        "minus": "assets/digits-hour/minus.svg"
+      },
+      "minute-cyan": {
+        "digits": [
+          "assets/digits-minute/0.svg",
+          "assets/digits-minute/1.svg",
+          "assets/digits-minute/2.svg",
+          "assets/digits-minute/3.svg",
+          "assets/digits-minute/4.svg",
+          "assets/digits-minute/5.svg",
+          "assets/digits-minute/6.svg",
+          "assets/digits-minute/7.svg",
+          "assets/digits-minute/8.svg",
+          "assets/digits-minute/9.svg"
+        ],
+        "minus": "assets/digits-minute/minus.svg"
+      },
+      "small": {
+        "digits": [
+          "assets/digits-small/0.svg",
+          "assets/digits-small/1.svg",
+          "assets/digits-small/2.svg",
+          "assets/digits-small/3.svg",
+          "assets/digits-small/4.svg",
+          "assets/digits-small/5.svg",
+          "assets/digits-small/6.svg",
+          "assets/digits-small/7.svg",
+          "assets/digits-small/8.svg",
+          "assets/digits-small/9.svg"
+        ],
+        "minus": "assets/digits-small/minus.svg"
+      },
+      "aod": {
+        "digits": [
+          "assets/digits-aod/0.svg",
+          "assets/digits-aod/1.svg",
+          "assets/digits-aod/2.svg",
+          "assets/digits-aod/3.svg",
+          "assets/digits-aod/4.svg",
+          "assets/digits-aod/5.svg",
+          "assets/digits-aod/6.svg",
+          "assets/digits-aod/7.svg",
+          "assets/digits-aod/8.svg",
+          "assets/digits-aod/9.svg"
+        ],
+        "minus": "assets/digits-aod/minus.svg"
+      }
+    }
+  },
+  "normal": {
+    "background": "#020605",
+    "widgets": [
+      {
+        "id": "title",
+        "label": "Title",
+        "type": "image",
+        "asset": "assets/labels/title.svg",
+        "x": 31,
+        "y": 44,
+        "z": 1,
+        "locked": true
+      },
+      {
+        "id": "hours",
+        "label": "Copper hours",
+        "type": "number",
+        "source": "hour",
+        "digitSet": "hour-copper",
+        "digits": 2,
+        "align": "left",
+        "spacing": 4,
+        "leadingZero": true,
+        "x": 40,
+        "y": 104,
+        "z": 2
+      },
+      {
+        "id": "time-colon",
+        "label": "Clock separator",
+        "type": "image",
+        "asset": "assets/decor/colon.svg",
+        "x": 102,
+        "y": 104,
+        "z": 2,
+        "locked": true
+      },
+      {
+        "id": "minutes",
+        "label": "Cyan minutes",
+        "type": "number",
+        "source": "minute",
+        "digitSet": "minute-cyan",
+        "digits": 2,
+        "align": "left",
+        "spacing": 4,
+        "leadingZero": true,
+        "x": 114,
+        "y": 104,
+        "z": 2
+      },
+      {
+        "id": "assembly",
+        "label": "Void-link ignition core",
+        "type": "animation",
+        "frames": [
+          "assets/anim/link-00.png",
+          "assets/anim/link-01.png",
+          "assets/anim/link-02.png",
+          "assets/anim/link-03.png",
+          "assets/anim/link-04.png",
+          "assets/anim/link-05.png",
+          "assets/anim/link-06.png",
+          "assets/anim/link-07.png",
+          "assets/anim/link-08.png",
+          "assets/anim/link-09.png",
+          "assets/anim/link-10.png",
+          "assets/anim/link-11.png",
+          "assets/anim/link-12.png",
+          "assets/anim/link-13.png",
+          "assets/anim/link-14.png",
+          "assets/anim/link-15.png",
+          "assets/anim/link-16.png",
+          "assets/anim/link-17.png",
+          "assets/anim/link-18.png",
+          "assets/anim/link-19.png",
+          "assets/anim/link-20.png",
+          "assets/anim/link-21.png",
+          "assets/anim/link-22.png",
+          "assets/anim/link-23.png",
+          "assets/anim/link-24.png",
+          "assets/anim/link-25.png",
+          "assets/anim/link-26.png",
+          "assets/anim/link-27.png",
+          "assets/anim/link-28.png",
+          "assets/anim/link-29.png",
+          "assets/anim/link-30.png",
+          "assets/anim/link-31.png",
+          "assets/anim/link-32.png",
+          "assets/anim/link-33.png",
+          "assets/anim/link-34.png",
+          "assets/anim/link-35.png",
+          "assets/anim/link-36.png",
+          "assets/anim/link-37.png",
+          "assets/anim/link-38.png",
+          "assets/anim/link-39.png",
+          "assets/anim/link-40.png",
+          "assets/anim/link-41.png",
+          "assets/anim/link-42.png",
+          "assets/anim/link-43.png",
+          "assets/anim/link-44.png",
+          "assets/anim/link-45.png",
+          "assets/anim/link-46.png",
+          "assets/anim/link-47.png"
+        ],
+        "intervalMs": 60,
+        "repeat": 0,
+        "x": 18,
+        "y": 190,
+        "z": 3
+      },
+      {
+        "id": "date-label",
+        "label": "Date label",
+        "type": "image",
+        "asset": "assets/labels/date.svg",
+        "x": 79,
+        "y": 404,
+        "z": 4,
+        "locked": true
+      },
+      {
+        "id": "month",
+        "label": "Month",
+        "type": "number",
+        "source": "month",
+        "digitSet": "small",
+        "digits": 2,
+        "align": "left",
+        "spacing": 1,
+        "leadingZero": true,
+        "x": 86,
+        "y": 424,
+        "z": 4
+      },
+      {
+        "id": "date-slash",
+        "label": "Date slash",
+        "type": "image",
+        "asset": "assets/decor/slash.svg",
+        "x": 109,
+        "y": 424,
+        "z": 4,
+        "locked": true
+      },
+      {
+        "id": "day",
+        "label": "Day",
+        "type": "number",
+        "source": "day",
+        "digitSet": "small",
+        "digits": 2,
+        "align": "left",
+        "spacing": 1,
+        "leadingZero": true,
+        "x": 118,
+        "y": 424,
+        "z": 4
+      }
+    ]
+  },
+  "aod": {
+    "enabled": true,
+    "background": "#000000",
+    "widgets": [
+      {
+        "id": "aod-hours",
+        "label": "AOD hours",
+        "type": "number",
+        "source": "hour",
+        "digitSet": "aod",
+        "digits": 2,
+        "align": "left",
+        "spacing": 4,
+        "leadingZero": true,
+        "x": 40,
+        "y": 150,
+        "z": 1
+      },
+      {
+        "id": "aod-colon",
+        "label": "AOD separator",
+        "type": "image",
+        "asset": "assets/decor/colon-aod.svg",
+        "x": 102,
+        "y": 150,
+        "z": 1,
+        "locked": true
+      },
+      {
+        "id": "aod-minutes",
+        "label": "AOD minutes",
+        "type": "number",
+        "source": "minute",
+        "digitSet": "aod",
+        "digits": 2,
+        "align": "left",
+        "spacing": 4,
+        "leadingZero": true,
+        "x": 114,
+        "y": 150,
+        "z": 1
+      },
+      {
+        "id": "aod-link",
+        "label": "AOD sleeping void-link",
+        "type": "image",
+        "asset": "assets/decor/link-static.svg",
+        "opacity": 0.32,
+        "x": 18,
+        "y": 260,
+        "z": 2,
+        "locked": true
+      }
+    ]
+  }
+}

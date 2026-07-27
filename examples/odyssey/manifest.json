@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/manifest.schema.json",
+  "formatVersion": 1,
+  "id": "260727010",
+  "name": "Odyssey",
+  "author": "Band 10 Toolkit",
+  "version": "1.0.0",
+  "description": "A pure cinematic loop: a letterboxed clip of The Odyssey trailer playing full-width on black. No clock, no widgets — just the video (as Nolan intended).",
+  "license": "MIT",
+  "device": "xiaomi-smart-band-10",
+  "preview": "generated",
+  "output": "odyssey",
+  "compiler": {
+    "target": "native",
+    "imageCompression": true
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "$schema": "../../schemas/layout.schema.json",
+  "formatVersion": 1,
+  "canvas": {
+    "width": 212,
+    "height": 520,
+    "clip": "pill"
+  },
+  "assets": {
+    "digitSets": {
+      "large": {
+        "digits": [
+          "assets/digits-large/0.svg",
+          "assets/digits-large/1.svg",
+          "assets/digits-large/2.svg",
+          "assets/digits-large/3.svg",
+          "assets/digits-large/4.svg",
+          "assets/digits-large/5.svg",
+          "assets/digits-large/6.svg",
+          "assets/digits-large/7.svg",
+          "assets/digits-large/8.svg",
+          "assets/digits-large/9.svg"
+        ],
+        "minus": "assets/digits-large/minus.svg"
+      },
+      "small": {
+        "digits": [
+          "assets/digits-small/0.svg",
+          "assets/digits-small/1.svg",
+          "assets/digits-small/2.svg",
+          "assets/digits-small/3.svg",
+          "assets/digits-small/4.svg",
+          "assets/digits-small/5.svg",
+          "assets/digits-small/6.svg",
+          "assets/digits-small/7.svg",
+          "assets/digits-small/8.svg",
+          "assets/digits-small/9.svg"
+        ],
+        "minus": "assets/digits-small/minus.svg"
+      }
+    }
+  },
+  "normal": {
+    "background": "#000000",
+    "widgets": [
+      {
+        "id": "battery-icon",
+        "label": "Battery icon",
+        "type": "image-list",
+        "source": "battery",
+        "fallback": "floor",
+        "items": [
+          { "value": 0, "asset": "assets/battery/0.svg" },
+          { "value": 20, "asset": "assets/battery/20.svg" },
+          { "value": 50, "asset": "assets/battery/50.svg" },
+          { "value": 80, "asset": "assets/battery/80.svg" },
+          { "value": 100, "asset": "assets/battery/100.svg" }
+        ],
+        "x": 50,
+        "y": 37,
+        "z": 1
+      },
+      {
+        "id": "battery-value",
+        "label": "Battery",
+        "type": "number",
+        "source": "battery",
+        "digitSet": "small",
+        "digits": 3,
+        "align": "left",
+        "spacing": 2,
+        "leadingZero": false,
+        "unitAsset": "assets/units/percent.svg",
+        "x": 84,
+        "y": 32,
+        "z": 2
+      },
+      {
+        "id": "hours",
+        "label": "Hours",
+        "type": "number",
+        "source": "hour",
+        "digitSet": "large",
+        "digits": 2,
+        "align": "center",
+        "spacing": 4,
+        "leadingZero": true,
+        "x": 106,
+        "y": 76,
+        "z": 3
+      },
+      {
+        "id": "minutes",
+        "label": "Minutes",
+        "type": "number",
+        "source": "minute",
+        "digitSet": "large",
+        "digits": 2,
+        "align": "center",
+        "spacing": 4,
+        "leadingZero": true,
+        "x": 106,
+        "y": 171,
+        "z": 4
+      },
+      {
+        "id": "accent-line",
+        "label": "Accent",
+        "type": "image",
+        "asset": "assets/accent/line.svg",
+        "x": 46,
+        "y": 276,
+        "z": 5
+      },
+      {
+        "id": "month",
+        "label": "Month",
+        "type": "number",
+        "source": "month",
+        "digitSet": "small",
+        "digits": 2,
+        "align": "right",
+        "spacing": 2,
+        "leadingZero": true,
+        "x": 93,
+        "y": 298,
+        "z": 6
+      },
+      {
+        "id": "date-separator",
+        "label": "Date separator",
+        "type": "image",
+        "asset": "assets/date/slash.svg",
+        "x": 101,
+        "y": 298,
+        "z": 6
+      },
+      {
+        "id": "day",
+        "label": "Day",
+        "type": "number",
+        "source": "day",
+        "digitSet": "small",
+        "digits": 2,
+        "align": "left",
+        "spacing": 2,
+        "leadingZero": true,
+        "x": 119,
+        "y": 298,
+        "z": 6
+      },
+      {
+        "id": "weather-icon",
+        "label": "Weather",
+        "type": "image-list",
+        "source": "weatherCondition",
+        "fallback": "floor",
+        "items": [
+          { "value": 0, "asset": "assets/weather/clear.svg", "label": "Clear" },
+          { "value": 1, "asset": "assets/weather/cloudy.svg", "label": "Cloudy" },
+          { "value": 7, "asset": "assets/weather/rain.svg", "label": "Rain" },
+          { "value": 14, "asset": "assets/weather/snow.svg", "label": "Snow" },
+          { "value": 18, "asset": "assets/weather/fog.svg", "label": "Fog" },
+          { "value": 99, "asset": "assets/weather/unknown.svg", "label": "No data" }
+        ],
+        "x": 26,
+        "y": 345,
+        "z": 7
+      },
+      {
+        "id": "temperature",
+        "label": "Temperature",
+        "type": "number",
+        "source": "temperatureC",
+        "digitSet": "small",
+        "digits": 3,
+        "align": "left",
+        "spacing": 2,
+        "leadingZero": false,
+        "unitAsset": "assets/units/degree-c.svg",
+        "x": 66,
+        "y": 348,
+        "z": 8
+      },
+      {
+        "id": "steps-icon",
+        "label": "Steps icon",
+        "type": "image",
+        "asset": "assets/icons/steps.svg",
+        "x": 27,
+        "y": 399,
+        "z": 9
+      },
+      {
+        "id": "steps-value",
+        "label": "Steps",
+        "type": "number",
+        "source": "steps",
+        "digitSet": "small",
+        "digits": 5,
+        "align": "left",
+        "spacing": 2,
+        "leadingZero": false,
+        "x": 66,
+        "y": 399,
+        "z": 10
+      },
+      {
+        "id": "steps-progress",
+        "label": "Step goal",
+        "type": "progress",
+        "source": "stepProgress",
+        "maximum": 100,
+        "shape": "bar",
+        "width": 120,
+        "height": 6,
+        "thickness": 6,
+        "foreground": "assets/progress/foreground.svg",
+        "background": "assets/progress/background.svg",
+        "x": 66,
+        "y": 429,
+        "z": 11
+      },
+      {
+        "id": "heart-icon",
+        "label": "Heart rate icon",
+        "type": "image",
+        "asset": "assets/icons/heart.svg",
+        "x": 26,
+        "y": 458,
+        "z": 12
+      },
+      {
+        "id": "heart-value",
+        "label": "Heart rate",
+        "type": "number",
+        "source": "heartRate",
+        "digitSet": "small",
+        "digits": 3,
+        "align": "left",
+        "spacing": 2,
+        "leadingZero": false,
+        "x": 66,
+        "y": 457,
+        "z": 13
+      }
+    ]
+  },
+  "aod": {
+    "enabled": true,
+    "background": "#000000",
+    "widgets": [
+      {
+        "id": "aod-hours",
+        "label": "AOD hours",
+        "type": "number",
+        "source": "hour",
+        "digitSet": "large",
+        "digits": 2,
+        "align": "center",
+        "spacing": 4,
+        "leadingZero": true,
+        "opacity": 0.42,
+        "x": 106,
+        "y": 116,
+        "z": 1
+      },
+      {
+        "id": "aod-minutes",
+        "label": "AOD minutes",
+        "type": "number",
+        "source": "minute",
+        "digitSet": "large",
+        "digits": 2,
+        "align": "center",
+        "spacing": 4,
+        "leadingZero": true,
+        "opacity": 0.42,
+        "x": 106,
+        "y": 211,
+        "z": 2
+      },
+      {
+        "id": "aod-month",
+        "label": "AOD month",
+        "type": "number",
+        "source": "month",
+        "digitSet": "small",
+        "digits": 2,
+        "align": "right",
+        "spacing": 2,
+        "leadingZero": true,
+        "opacity": 0.35,
+        "x": 93,
+        "y": 336,
+        "z": 3
+      },
+      {
+        "id": "aod-separator",
+        "label": "AOD date separator",
+        "type": "image",
+        "asset": "assets/date/slash.svg",
+        "opacity": 0.35,
+        "x": 101,
+        "y": 336,
+        "z": 3
+      },
+      {
+        "id": "aod-day",
+        "label": "AOD day",
+        "type": "number",
+        "source": "day",
+        "digitSet": "small",
+        "digits": 2,
+        "align": "left",
+        "spacing": 2,
+        "leadingZero": true,
+        "opacity": 0.35,
+        "x": 119,
+        "y": 336,
+        "z": 3
+      },
+      {
+        "id": "aod-battery",
+        "label": "AOD battery",
+        "type": "image-list",
+        "source": "battery",
+        "fallback": "floor",
+        "items": [
+          { "value": 0, "asset": "assets/battery/0.svg" },
+          { "value": 20, "asset": "assets/battery/20.svg" },
+          { "value": 50, "asset": "assets/battery/50.svg" },
+          { "value": 80, "asset": "assets/battery/80.svg" },
+          { "value": 100, "asset": "assets/battery/100.svg" }
+        ],
+        "opacity": 0.35,
+        "x": 93,
+        "y": 404,
+        "z": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/manifest.schema.json",
+  "formatVersion": 1,
+  "id": "260718010",
+  "name": "VOID-LINK O66",
+  "author": "Band 10 Toolkit",
+  "version": "1.0.0",
+  "description": "A non-human circuit assembles, locks, ignites into a rotating void reactor, and collapses back to a dormant seed.",
+  "license": "MIT",
+  "device": "xiaomi-smart-band-10",
+  "preview": "generated",
+  "output": "circuit-link",
+  "compiler": {
+    "target": "native",
+    "imageCompression": true
+  }
+}

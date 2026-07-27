@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/manifest.schema.json",
+  "formatVersion": 1,
+  "id": "260718011",
+  "name": "RLC SINGULARITY",
+  "author": "Band 10 Toolkit",
+  "version": "1.0.0",
+  "description": "A series RLC circuit synthesizes resistor, inductor, and capacitor stages before entering a neon resonance state.",
+  "license": "MIT",
+  "device": "xiaomi-smart-band-10",
+  "preview": "generated",
+  "output": "rlc-singularity",
+  "compiler": {
+    "target": "native",
+    "imageCompression": true
+  }
+}
