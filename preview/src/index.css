@@ -1,0 +1,7 @@
+html { background: #090d12; }
+body { margin: 0; min-width: 320px; min-height: 100vh; font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+button, input, select, textarea { font-family: inherit; }
+::selection { color: #101609; background: #b9ff3d; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { border: 2px solid transparent; border-radius: 999px; background: #2a3742; background-clip: padding-box; }
