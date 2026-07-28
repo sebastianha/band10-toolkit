@@ -1,5 +1,10 @@
 # Band 10 Toolkit
 
+[![CI](https://github.com/utsabfdahal/band10-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/utsabfdahal/band10-toolkit/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Node.js 22+](https://img.shields.io/badge/Node.js-22%2B-339933?logo=node.js&logoColor=white)](https://nodejs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](tsconfig.json)
+
 An open, source-first development workflow for custom **Xiaomi Smart Band 10** (`o66`) watch faces.
 
 Design assets, describe widgets in JSON, validate, live-preview in React/SVG, generate editable FPRJ/GMF projects, package a reverse-engineered `.face`/`.bin`, inspect it, and stage it for a human-confirmed Android install.
