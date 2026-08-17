@@ -7,9 +7,9 @@
 
 An open, source-first development workflow for custom **Xiaomi Smart Band 10** (`o66`) watch faces.
 
-Design assets, describe widgets in JSON, validate, live-preview in React/SVG, generate editable FPRJ/GMF projects, package a reverse-engineered `.face`/`.bin`, inspect it, and stage it for a human-confirmed Android install.
+Design assets, describe widgets in JSON, validate, live-preview in React/SVG, generate editable FPRJ/GMF projects, package a reverse-engineered `.face`/`.bin`, inspect it, and install it on a real device.
 
-> **Hardware status:** the open native packer is structurally and pixel-round-trip tested, but its output has **not yet been accepted on a physical Band 10 in this repository's test environment**. Treat native packages as experimental. Use a user-supplied Mi Create/EasyFace compiler for comparison and document the backend used.
+> **Hardware status:** faces generated with this toolkit have been **successfully installed and displayed on a physical Xiaomi Smart Band 10**, transferred to the watch through the **Notify (Notify for Mi Band)** Android app. The packages render correctly on-device, including the active and always-on displays. Behaviour can still vary across firmware and regions, so verify your own build on your own band before relying on it.
 
 ![Band 10 Studio](docs/screenshots/studio.png)
 
@@ -56,6 +56,13 @@ npm run inspect         # print headers, resources, and bindings
 ```
 
 The packaged files land in `examples/minimal-amoled/dist/`.
+
+**5. Install it on a real Band 10**
+
+The generated `.face` package can be pushed to a physical watch with the
+**Notify (Notify for Mi Band)** Android app: open Notify → *Watchface* →
+import the `.face` file → sync to the band. This is how the faces in this repo
+were verified on-device, including their always-on displays.
 
 ### Preview any of the other faces
 
@@ -235,7 +242,7 @@ Machine-readable output is available from `validate --json` and `inspect --json`
 
 | Target | Openness | Current confidence |
 |---|---|---|
-| `native` | MIT code in this repository | Structure/resources round-trip; physical install unverified |
+| `native` | MIT code in this repository | Structure/resources round-trip; **installed and rendering on a physical Band 10 via the Notify app** |
 | `mi-create` | Adapter open; compiler closed/user-supplied | Community production path; requires Windows/Wine |
 | `mi8-tool` | Adapter open; external Java source has no license | Experimental; known parser failures on valid samples |
 
