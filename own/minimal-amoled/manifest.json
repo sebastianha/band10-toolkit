@@ -1,15 +1,15 @@
 {
   "$schema": "../../schemas/manifest.schema.json",
   "formatVersion": 1,
-  "id": "260714010",
-  "name": "Own",
-  "author": "Sebastian",
+  "id": "713509857",
+  "name": "Clean Basic",
+  "author": "Sebastian H.",
   "version": "1.0.0",
-  "description": "Minimal black AMOLED face",
+  "description": "Minimal black AMOLED face with time, date, steps and battery if empty",
   "license": "MIT",
   "device": "xiaomi-smart-band-10",
   "preview": "generated",
-  "output": "own",
+  "output": "clean_basic",
   "compiler": {
     "target": "native",
     "imageCompression": true
