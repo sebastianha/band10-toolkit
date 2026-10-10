@@ -9,7 +9,7 @@ const OUTPUT_DIR = "../assets/digits-small/";
 
 const CANVAS_WIDTH = 15;
 const CANVAS_HEIGHT = 20;
-const COLOR = "#999999";
+const COLOR = "#aaaaaa";
 
 const SIDE_PADDING = 1;
 

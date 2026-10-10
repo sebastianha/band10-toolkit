@@ -9,7 +9,7 @@ const OUTPUT_DIR = "../assets/weekdays/";
 
 const CANVAS_WIDTH = 60;
 const CANVAS_HEIGHT = 34;
-const COLOR = "#999999";
+const COLOR = "#aaaaaa";
 
 const WEEKDAYS = [
   "Mon",

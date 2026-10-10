@@ -9,7 +9,7 @@ const OUTPUT_DIR = "../assets/weekdays/";
 
 const CANVAS_WIDTH = 7;
 const CANVAS_HEIGHT = 7;
-const COLOR = "#999999";
+const COLOR = "#aaaaaa";
 
 function writeSvg(filename, pathData) {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
