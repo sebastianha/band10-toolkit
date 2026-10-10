@@ -36,7 +36,7 @@
           "assets/digits-small/8.svg",
           "assets/digits-small/9.svg"
         ],
-        "minus": "assets/minus-b2a70e8f0c.png"
+        "minus": "assets/digits-small/minus.svg"
       }
     }
   },
@@ -44,9 +44,25 @@
     "background": "#000000",
     "widgets": [
       {
+        "id": "battery-icon-only-low",
+        "label": "Battery icon only low",
+        "type": "image-list",
+        "source": "battery",
+        "fallback": "floor",
+        "items": [
+          { "value": 0, "asset": "assets/battery_only_low/0.svg" },
+          { "value": 5, "asset": "assets/battery_only_low/10.svg" },
+          { "value": 10, "asset": "assets/battery_only_low/20.svg" },
+          { "value": 20, "asset": "assets/battery_only_low/30.svg" }
+        ],
+        "x": 92,
+        "y": 40,
+        "z": 1
+      },
+      {
         "id": "hours",
         "x": 106,
-        "y": 76,
+        "y": 75,
         "z": 3,
         "label": "Hours",
         "type": "number",
@@ -61,7 +77,7 @@
       {
         "id": "minutes",
         "x": 106,
-        "y": 171,
+        "y": 200,
         "z": 4,
         "label": "Minutes",
         "type": "number",
@@ -74,20 +90,69 @@
         "locked": true
       },
       {
-        "id": "battery-icon-only-low",
-        "label": "Battery icon only low",
+        "id": "weekday",
+        "label": "Week day",
         "type": "image-list",
-        "source": "battery",
+        "source": "weekday",
         "fallback": "floor",
         "items": [
-          { "value": 0, "asset": "assets/battery_only_low/0.svg" },
-          { "value": 5, "asset": "assets/battery_only_low/10.svg" },
-          { "value": 10, "asset": "assets/battery_only_low/20.svg" },
-          { "value": 20, "asset": "assets/battery_only_low/30.svg" }
+          { "value": 0, "asset": "assets/weekdays/Sun.svg" },
+          { "value": 1, "asset": "assets/weekdays/Mon.svg" },
+          { "value": 2, "asset": "assets/weekdays/Tue.svg" },
+          { "value": 3, "asset": "assets/weekdays/Wed.svg" },
+          { "value": 4, "asset": "assets/weekdays/Thu.svg" },
+          { "value": 5, "asset": "assets/weekdays/Fri.svg" },
+          { "value": 6, "asset": "assets/weekdays/Sat.svg" }
         ],
-        "x": 92,
-        "y": 413,
+        "x": 30,
+        "y": 318,
         "z": 1
+      },
+      {
+        "id": "day",
+        "x": 111,
+        "y": 325,
+        "z": 3,
+        "label": "Day",
+        "type": "number",
+        "source": "day",
+        "digitSet": "small",
+        "digits": 2,
+        "align": "center",
+        "spacing": 4,
+        "leadingZero": true
+      },
+      {
+        "id": "dot-day",
+        "x": 130,
+        "y": 339,
+        "z": 5,
+        "opacity": 1,
+        "type": "image",
+        "asset": "assets/weekdays/dot.svg"
+      },
+      {
+        "id": "month",
+        "x": 156,
+        "y": 325,
+        "z": 4,
+        "label": "Month",
+        "type": "number",
+        "source": "month",
+        "digitSet": "small",
+        "digits": 2,
+        "align": "center",
+        "spacing": 4,
+        "leadingZero": true
+      },
+      {
+        "id": "dot-month",
+        "x": 174,
+        "y": 339,
+        "z": 5,
+        "opacity": 1,
+        "type": "image",
+        "asset": "assets/weekdays/dot.svg"
       }
     ]
   },

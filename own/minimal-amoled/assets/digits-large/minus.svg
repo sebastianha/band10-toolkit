@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="45" height="88" viewBox="0 0 45 88"><g fill="#f4f7f8"><rect x="7" y="41" width="31" height="7" rx="3.5"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="75" height="110"
+     viewBox="0 0 75 110">
+  <path
+    fill="#ffffff"
+    d="M 22.5 52
+       H 52.5
+       V 58
+       H 22.5
+       Z"/>
+</svg>

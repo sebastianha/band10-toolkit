@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="45" height="88" viewBox="0 0 45 88"><g fill="#f4f7f8"><rect x="38" y="7" width="7" height="34" rx="3.5"/><rect x="38" y="48" width="7" height="34" rx="3.5"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="75" height="110"
+     viewBox="0 0 75 110">
+  <path
+    fill="#ffffff"
+    transform="translate(0.24193548387096975 109.99999999999999) scale(0.07549759780370624)"
+    d="M788-1457L819-1457L819 0L506 0L506-1101L168-998L168-1240"/>
+</svg>
