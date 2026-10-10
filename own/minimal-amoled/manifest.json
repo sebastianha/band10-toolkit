@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/manifest.schema.json",
+  "formatVersion": 1,
+  "id": "260714010",
+  "name": "Own",
+  "author": "Sebastian",
+  "version": "1.0.0",
+  "description": "Minimal black AMOLED face",
+  "license": "MIT",
+  "device": "xiaomi-smart-band-10",
+  "preview": "generated",
+  "output": "own",
+  "compiler": {
+    "target": "native",
+    "imageCompression": true
+  }
+}

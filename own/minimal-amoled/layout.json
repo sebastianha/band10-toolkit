@@ -1,0 +1,99 @@
+{
+  "$schema": "../../schemas/layout.schema.json",
+  "formatVersion": 1,
+  "canvas": {
+    "width": 212,
+    "height": 520,
+    "clip": "pill"
+  },
+  "assets": {
+    "digitSets": {
+      "large": {
+        "digits": [
+          "assets/digits-large/0.svg",
+          "assets/digits-large/1.svg",
+          "assets/digits-large/2.svg",
+          "assets/digits-large/3.svg",
+          "assets/digits-large/4.svg",
+          "assets/digits-large/5.svg",
+          "assets/digits-large/6.svg",
+          "assets/digits-large/7.svg",
+          "assets/digits-large/8.svg",
+          "assets/digits-large/9.svg"
+        ],
+        "minus": "assets/digits-large/minus.svg"
+      },
+      "small": {
+        "digits": [
+          "assets/digits-small/0.svg",
+          "assets/digits-small/1.svg",
+          "assets/digits-small/2.svg",
+          "assets/digits-small/3.svg",
+          "assets/digits-small/4.svg",
+          "assets/digits-small/5.svg",
+          "assets/digits-small/6.svg",
+          "assets/digits-small/7.svg",
+          "assets/digits-small/8.svg",
+          "assets/digits-small/9.svg"
+        ],
+        "minus": "assets/minus-b2a70e8f0c.png"
+      }
+    }
+  },
+  "normal": {
+    "background": "#000000",
+    "widgets": [
+      {
+        "id": "hours",
+        "x": 106,
+        "y": 76,
+        "z": 3,
+        "label": "Hours",
+        "type": "number",
+        "source": "hour",
+        "digitSet": "large",
+        "digits": 2,
+        "align": "center",
+        "spacing": 4,
+        "leadingZero": true,
+        "locked": true
+      },
+      {
+        "id": "minutes",
+        "x": 106,
+        "y": 171,
+        "z": 4,
+        "label": "Minutes",
+        "type": "number",
+        "source": "minute",
+        "digitSet": "large",
+        "digits": 2,
+        "align": "center",
+        "spacing": 4,
+        "leadingZero": true,
+        "locked": true
+      },
+      {
+        "id": "battery-icon-only-low",
+        "label": "Battery icon only low",
+        "type": "image-list",
+        "source": "battery",
+        "fallback": "floor",
+        "items": [
+          { "value": 0, "asset": "assets/battery_only_low/0.svg" },
+          { "value": 5, "asset": "assets/battery_only_low/10.svg" },
+          { "value": 10, "asset": "assets/battery_only_low/20.svg" },
+          { "value": 20, "asset": "assets/battery_only_low/30.svg" }
+        ],
+        "x": 92,
+        "y": 413,
+        "z": 1
+      }
+    ]
+  },
+  "aod": {
+    "background": "#000000",
+    "widgets": [],
+    "enabled": false
+  }
+}
