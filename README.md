@@ -2,5 +2,5 @@
 
 | Active display | Always-on display |
 |---|---|
-| ![Basic Clean](own/mimimal_amoled/screenshots/preview.png) | ![Basic Clean AOD](own/mimimal_amoled/screenshots/preview_aod.png) |
+| ![Basic Clean](own/minimal_amoled/screenshots/preview.png) | ![Basic Clean AOD](own/minimal_amoled/screenshots/preview_aod.png) |
 
