@@ -23,7 +23,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="14.647212"
-     inkscape:cx="3.9939341"
+     inkscape:cx="3.9597979"
      inkscape:cy="7.3734169"
      inkscape:window-width="1278"
      inkscape:window-height="1368"
@@ -36,17 +36,20 @@
      stroke="#f4f7f8"
      stroke-width="1.5"
      id="g1"
-     transform="matrix(1.137766,0,0,0.99074739,-0.2844415,-1.2384342)">
+     transform="matrix(1.137766,0,0,0.99074739,-0.2844415,-1.2384342)"
+     style="stroke:#ffffff;stroke-opacity:1">
     <rect
        x="1"
        y="2"
        width="21"
        height="10"
        rx="2"
-       id="rect1" />
+       id="rect1"
+       style="stroke:#ffffff;stroke-opacity:1" />
     <path
        d="m 23,5 h 2 v 4 h -2"
-       id="path1" />
+       id="path1"
+       style="stroke:#ffffff;stroke-opacity:1" />
   </g>
   <rect
      x="2.8070014"

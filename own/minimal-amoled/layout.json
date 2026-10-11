@@ -51,9 +51,9 @@
         "fallback": "floor",
         "items": [
           { "value": 0, "asset": "assets/battery_only_low/0.svg" },
-          { "value": 5, "asset": "assets/battery_only_low/10.svg" },
-          { "value": 10, "asset": "assets/battery_only_low/20.svg" },
-          { "value": 20, "asset": "assets/battery_only_low/30.svg" }
+          { "value": 6, "asset": "assets/battery_only_low/10.svg" },
+          { "value": 11, "asset": "assets/battery_only_low/20.svg" },
+          { "value": 21, "asset": "assets/battery_only_low/30.svg" }
         ],
         "x": 91,
         "y": 45,
