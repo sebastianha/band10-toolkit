@@ -55,8 +55,8 @@
           { "value": 10, "asset": "assets/battery_only_low/20.svg" },
           { "value": 20, "asset": "assets/battery_only_low/30.svg" }
         ],
-        "x": 92,
-        "y": 35,
+        "x": 91,
+        "y": 45,
         "z": 1
       },
       {
@@ -185,7 +185,8 @@
         ],
         "x": 31,
         "y": 360,
-        "z": 1
+        "z": 1,
+        "allowOverlap": true
       },
       {
         "id": "steps",
@@ -199,7 +200,7 @@
         "digits": 5,
         "align": "center",
         "spacing": 1,
-        "leadingZero": true
+        "leadingZero": false
       }
     ]
   },
